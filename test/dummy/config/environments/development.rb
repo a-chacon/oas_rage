@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rage.configure do
   # Specify the number of server processes to run. Defaults to number of CPU cores.
   config.server.workers_count = 1
@@ -6,7 +8,7 @@ Rage.configure do
   config.server.port = 3000
 
   # Specify the logger
-  config.logger = Rage::Logger.new(STDOUT)
+  config.logger = Rage::Logger.new($stdout)
 
   config.middleware.use Rage::Reloader
 end

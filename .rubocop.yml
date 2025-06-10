@@ -1,5 +1,12 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   TargetRubyVersion: 3.1
+  NewCops: disable
+  SuggestExtensions: false
 
 Style/Documentation:
-  disable: true
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15

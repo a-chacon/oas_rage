@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProjectsController < RageController::API
   # @tags Projects
   # @summary List all projects
@@ -9,8 +11,8 @@ class ProjectsController < RageController::API
   #   ]
   def index
     projects = [
-      { id: 1, title: "Project Alpha", description: "A sample project" },
-      { id: 2, title: "Project Beta", description: "Another sample project" }
+      { id: 1, title: 'Project Alpha', description: 'A sample project' },
+      { id: 2, title: 'Project Beta', description: 'Another sample project' }
     ]
     render json: projects
   end
@@ -25,11 +27,11 @@ class ProjectsController < RageController::API
   # @response_example Project not found(404) [Hash]
   #   { error: "Project not found" }
   def show
-    project = { id: params[:id].to_i, title: "Project Alpha", description: "A sample project" }
+    project = { id: params[:id].to_i, title: 'Project Alpha', description: 'A sample project' }
     if params[:id].to_i == 1
       render json: project
     else
-      render json: { error: "Project not found" }, status: 404
+      render json: { error: 'Project not found' }, status: 404
     end
   end
 
@@ -74,7 +76,7 @@ class ProjectsController < RageController::API
       project = { id: 1, title: params[:title], description: params[:description] }
       render json: project
     else
-      render json: { error: "Project not found" }, status: 404
+      render json: { error: 'Project not found' }, status: 404
     end
   end
 
@@ -90,7 +92,7 @@ class ProjectsController < RageController::API
     if params[:id].to_i == 1
       head :no_content
     else
-      render json: { error: "Project not found" }, status: 404
+      render json: { error: 'Project not found' }, status: 404
     end
   end
 end

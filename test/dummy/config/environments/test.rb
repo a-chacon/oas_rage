@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rage.configure do
   # Specify the number of server processes to run. Defaults to number of CPU cores.
   config.server.workers_count = 1

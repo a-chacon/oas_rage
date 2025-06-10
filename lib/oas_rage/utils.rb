@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OasRage
   module Utils
     def self.camelize(str)

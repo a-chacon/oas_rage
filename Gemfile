@@ -18,5 +18,3 @@ gem 'rage-rb', '~> 1.16'
 gem 'logger', '~> 1.7'
 
 gem 'debug'
-
-gem 'oas_core', path: '../oas_core/'

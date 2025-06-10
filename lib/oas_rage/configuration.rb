@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OasRage
   class Configuration < OasCore::Configuration
     attr_accessor :autodiscover_request_body, :autodiscover_responses, :ignored_actions, :rapidoc_theme, :layout

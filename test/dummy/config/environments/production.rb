@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rage.configure do
   # Specify the number of server processes to run. Defaults to number of CPU cores.
   # config.server.workers_count = ENV.fetch("WEB_CONCURRENCY", 1).to_i
@@ -6,6 +8,6 @@ Rage.configure do
   config.server.port = 3000
 
   # Specify the logger
-  config.logger = Rage::Logger.new(STDOUT)
+  config.logger = Rage::Logger.new($stdout)
   config.log_level = Logger::INFO
 end

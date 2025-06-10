@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OasRage
   class OasRouteBuilder
     def self.build_from_rage_route(rage_route)
