@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'OasRage is a tool for generating automatic interactive documentation for your APIs.'
   spec.description = <<~DESC
-    OasRage is a Rails engine for generating automatic interactive documentation for your Rails APIs.
+    OasRage is a ruby gem for generating automatic interactive documentation for your Rage APIs.
     It generates an OAS 3.1 document and displays it using RapiDoc.
   DESC
   spec.homepage = 'https://github.com/a-chacon/oas_rage'
@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'erb', '~> 5.0', '>= 5.0.1'
-  spec.add_dependency 'oas_core', '~> 0.5.1'
+  spec.add_dependency 'oas_core', '~> 0.5.2'
   spec.add_dependency 'rack', '~> 2.0 '
 end

@@ -12,8 +12,6 @@ module OasRage
 
     def build
       OasCore::OasRoute.new(
-        controller_class: controller_class,
-        controller_action: controller_action,
         controller: controller,
         method_name: method,
         verb: verb,
