@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    oas_rage (0.2.0)
+    oas_rage (0.2.1)
       erb (~> 5.0, >= 5.0.1)
       oas_core (~> 0.5.2)
       rack (~> 2.0)
